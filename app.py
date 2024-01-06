@@ -4,6 +4,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 import plotly.express as px
+import os
 
 # Create Dash app
 app = dash.Dash(__name__)
@@ -29,5 +30,5 @@ app.layout = html.Div(
 )
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
-
+    port = int(os.environ.get("PORT", 8080))  # Use port 8080 if no PORT environment variable is set
+    app.run_server(debug=False, host='0.0.0.0', port=port)
