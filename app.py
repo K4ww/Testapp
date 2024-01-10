@@ -4,6 +4,7 @@ import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output, State
 import pandas as pd
+import os
 
 # Supposons que vos fichiers CSV soient dans le même répertoire que votre script
 reddit_csv_file_path = 'Python_reddit_posts.csv'
