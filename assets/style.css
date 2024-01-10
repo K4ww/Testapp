@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    width: 300px;
+    margin-right: 10px;
+    margin-left: 540px;
+}
+
+.search-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#search-results {
+    margin-top: 20px;
+}
+
+.result-item {
+    margin-bottom: 20px;
+}
+
+.result-item hr {
+    border-top: 1px solid #ccc;
+}
